@@ -1,0 +1,148 @@
+
+/*fileds area section reference:https://www.google.com/search?q=create+servey+page+
+        in+html&rlz=1C1GCEA_enUS974US974&oq=create+servey+page+in+html&aqs=chrome.
+        .69i57.11222j0j15&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:f81b7423,vid:qzzHn1TOetE*/
+/*fields box section*/
+:root{
+    --color-white:#f3f3f3;
+    --color-darkblue:#1d491d;
+    --color-darkblue-alpha:rgba(74, 124, 66, 0.8);
+    --color-green:#d0e2d7;
+}
+/*Box border*/
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+/*box body text style*/ 
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+/*background style*/ 
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(215deg,rgba(197, 109, 195, 0.8),rgba(112, 23, 26, 0.8));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#title{
+    color: var(--color-green);
+    font-weight: 600;
+    
+    
+}
+h1{
+    font-weight: 400;
+    line-height: 1.2;
+}
+p{
+    font-size: 1.125rem;
+}
+h1,p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+input,button,select,textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+/*box alignment section*/
+.container{
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    padding:1.8rem 1rem;
+}
+
+.header{
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+    text-align: center;
+}
+
+
+#quest{
+    color: rgb(11, 10, 10);
+    font-size: 1.5rem;
+}
+form{
+    background: var(--color-darkblue-alpha);
+    border-radius: 0.25rem;
+}
+
+@media (min-width: 480px){
+    form{
+        padding: 2.5rem;
+    }
+}
+/*box contents section*/
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+/*fields style section*/
+.formControl{
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+/*comment area style section*/
+.textarea{
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.15rem;
+    outline: none;
+    border-color: blue;
+    border-radius: 5px;
+}
+/*button style section*/
+.btn{
+    display: block;
+    width: 100%;
+    padding:0.5rem 0.75rem;
+    color: inherit;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(8, 8, 33);
+    border: none;
+}
+/*box size relative to page*/
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width:800px){
+    .container{
+        max-width: 760px;
+    }
+}

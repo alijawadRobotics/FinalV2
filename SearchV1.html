@@ -1,0 +1,96 @@
+<!--Ali Jawad
+Final Project
+Search
+Jill Coddington-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="SearchV1.css"> 
+    <title>UAT Online Class</title>
+</head>
+<body>
+    <!--create container for the search bars-->
+    <div class="container">
+        <header class="header">
+            <h1 id="title">CSC102 Online</h1>
+            <p id="description"></p>
+        </header>
+        <form action="" id="survey-form">
+            <!--text section-->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" 
+                name="name" id="name" 
+                class="formControl" 
+                placeholder="Enter your name" 
+                required>
+            </div>
+            <!--End of text section-->
+            <!--Type Email section-->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" 
+                name="email" id="email" 
+                class="formControl" 
+                placeholder="Enter your email" 
+                required>
+            </div>
+            <!--End of email section-->
+            <!--Number section-->
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="number" 
+                name="phone" id="phone" 
+                class="formControl" 
+                placeholder="Enter your phone" 
+                required>
+            </div>
+            <!--End of number section-->
+            <!--Address section-->
+            <div class="form-group">
+                <label for="address">Address</label>
+                <span class="clue">(optional)</span>
+                <input type="text" 
+                name="address" id="address" 
+                class="formControl" 
+                placeholder="Enter your address" 
+                required>
+            </div>
+            <!--End of address section-->
+            <!--select selection-->
+            <div class="form-group">
+                <p id="quest">What is your role?</p>
+                <select name="role" id="dropdown" 
+                class="formControl" required>
+                <option value="" disabled selected>
+                selsect current role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="job">Job</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+            <!--End of selection-->
+            <!--Comment section-->
+            <div class="form-group">
+                <p id="quest">Comment:</p>
+                <textarea name="feedback" 
+                id="feedback" cols="30" 
+                rows="5" class="textarea" 
+                placeholder="Enter your comment here"></textarea>
+            </div>
+            <!--End of comment section-->
+            <!--submit button-->
+            <div class="form-group">
+                <button type="submit" 
+                id="submit" class="btn">Submit</button>
+            </div>
+            <!--end of submit button -->
+
+        </form> 
+    </div>
+</body>
+</html>

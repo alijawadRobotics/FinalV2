@@ -1,0 +1,82 @@
+<!--Ali Jawad
+Final Project
+Project progress
+Jill Coddington-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Projects.css" rel="stylesheet">
+    <script src="Projects.js"></script>
+    <title>Projects</title>
+    <!--call buttons internal style-->
+    <style>
+        .button{/*icon buttons style refernce:https://ionic.io/ionicons/usage*/
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background: #009578;
+            border-radius: 5px;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            
+        }
+        .button:hover{/*buttons hover section*/
+            background: #008168;
+        }
+        .button:active{/*buttons active display section*/
+            background: #008e58;
+        }
+        .button-text,/*button text and icon relatively section*/
+        .button-icon{
+            display: inline-flex;
+            align-items: center;
+            padding: 0 24px;
+            color: #fff;
+            height: 100%;
+        }   
+        .button-icon{/*button icon color and opacity 8%*/
+            font-size: 1.5em;
+            background: rgb(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(234, 255, 239, 100%);">Projects progress</h1><!--Header section-->
+    <div><button type="button" class="button" onclick="countDown();"><!--countdown button class and fucntion section-->
+        <span class="button-text">Countdown</span>
+        <span class="button-icon"><ion-icon name="hourglass-outline"></ion-icon></span><!--icon reference site "ionic"-->
+    </button>
+    <a id="Countdown Timer" style="color: #fff; font-size: 30px; font-weight: bold; ">Countdown Timer</a><!--Counter text display section-->
+    </div>
+    <div>
+        <p><button type="button" class="button" onclick="efficiency();"><!--Efficiency button call section-->
+            <span class="button-text">C.Efficiency</span>
+            <span class="button-icon"><ion-icon name="battery-charging-outline"></ion-icon></span>
+        </button>
+        <a id="countdownTimer1" style="color: #fff; font-size: 30px; font-weight: bold; ">Final Countdown</a></p><!--efficiency button text display section-->
+    </div>
+    <div>
+        <button type="button" class="button" onclick="array();"><!--Array button call section-->
+            <span class="button-text">Disp.  Array</span>
+            <span class="button-icon"><ion-icon name="documents-sharp"></ion-icon></span>
+        </button>
+        <a id="array" style="color: #fff; font-size: 30px; font-weight: bold; ">Class Progress</a><!--Array button text display section-->
+    </div>
+    <br>
+    <div>
+        <button id="stopStart" type="button" class="button" onclick="stopStart();"><!--Stop/Start button call section-->
+            <span class="button-text">Stop - Start</span>
+            <span class="button-icon"><ion-icon name="stop-sharp"></ion-icon></span>
+        </button>
+    </div>
+    <img src="Projects.jpg"><!--background image call-->
+    <!--Declare ionic site for the buttons icon-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

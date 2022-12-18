@@ -1,0 +1,7 @@
+/*background image style*/
+body{
+    background-color: rgb(0, 29, 55);/*call the rgb dark blue to background around image*/
+}
+img{
+    border-radius: 600px;/*image round corners section*/
+}
